@@ -29,7 +29,7 @@ public class UserController {
                                @RequestParam String password,
                                HttpSession session,
                                Model model) {
-        if (username.equals("admin") && password.equals("20230140140")) { // ganti NIM kamu
+        if (username.equals("admin") && password.equals("20230140140")) {
             session.setAttribute("loggedIn", true);
             return "redirect:/home";
         } else {

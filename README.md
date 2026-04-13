@@ -1,5 +1,5 @@
 
-# 📦 Docker Project Documentation
+# 📦 Project Documentation
 
 ## 🐳 1. Docker Image (Docker Desktop)
 
@@ -17,7 +17,7 @@
 
 ---
 
-## 🌐 3. Web Aplikasi (Project Sendiri - Running via Docker)
+## 🌐 3. Web Aplikasi (Project Sendiri)
 
 Berikut adalah tampilan web aplikasi yang dijalankan menggunakan Docker:
 
@@ -47,7 +47,7 @@ Berikut adalah tampilan web aplikasi yang dijalankan menggunakan Docker:
 
 ---
 
-## 🌐 4. Web Aplikasi (Project Teman - Hasil Pull Image)
+## 🌐 4. Web Aplikasi (Project Teman)
 
 Berikut adalah tampilan web aplikasi dari image teman yang telah di-pull dan dijalankan:
 

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        h3 { margin-bottom: 5px; }
+        a { color: #ff69b4; text-decoration: none; font-size: 14px; }
+        a:hover { text-decoration: underline; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th { background-color: #ff69b4; color: white; padding: 12px; text-align: center; border: 1px solid #ddd; }
+        td { padding: 10px; border: 1px solid #ddd; text-align: left; }
+        .empty-row { background-color: #fff0f5; text-align: center; }
+    </style>
+</head>
+<body>
+<h3>MY Website 20230140140</h3> <p style="font-size: 14px;">Selamat datang di aplikasi!</p>
+<a th:href="@{/form}">+ Input Data Mahasiswa</a>
+<br><br>
+
+<b style="font-size: 16px;">Data Mahasiswa</b>
+<table>
+    <thead>
+    <tr>
+        <th>No</th>
+        <th>Nama</th>
+        <th>NIM</th>
+        <th>Jenis Kelamin</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:if="${#lists.isEmpty(userList)}" class="empty-row">
+        <td colspan="4">Belum ada data</td>
+    </tr>
+    <tr th:each="user, i : ${userList}">
+        <td align="center" th:text="${i.count}"></td>
+        <td th:text="${user.nama}"></td>
+        <td th:text="${user.nim}"></td>
+        <td th:text="${user.jenisKelamin}"></td>
+    </tr>
+    </tbody>
+</table>
+
+<br>
+<a th:href="@{/logout}" style="color: #ff1493;">Logout</a>
+</body>
+</html>
